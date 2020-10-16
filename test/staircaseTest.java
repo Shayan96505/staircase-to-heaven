@@ -8,7 +8,7 @@ class staircaseTest {
 
   private static String[][] outputs = {
       {""},
-      {"*"},
+      {" *"},
       {"  *\n" + " **\n" + "***"},
       {"    *\n" + "   **\n" + "  ***\n" + " ****\n" + "*****"},
       {"         *\n"
