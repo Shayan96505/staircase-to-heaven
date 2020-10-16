@@ -5,17 +5,15 @@ import org.junit.jupiter.api.Test;
 class CubesTest {
 
   private static final long[] cubeTestInput = {
-      -1,
       0,
-      1,
-      8,
-      27,
-      28,
-      2909384758475845L
+      -1,
+      4096,
+      549755813888L,
+      4,
+      65536,
   };
 
   private static final boolean[] cubeTestExpected = {
-      true,
       true,
       true,
       true,
