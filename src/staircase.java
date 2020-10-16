@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class staircase {
 
 
@@ -7,22 +5,22 @@ public class staircase {
 
 
     String [] steps = new String [length];
-    String spaces = "";
-    String asterisks = "";
+    StringBuilder spaces = new StringBuilder();
+    StringBuilder asterisks = new StringBuilder();
 
     for(int i = 0; i < length; i++){
       for(int j = 1; j < length - i ; j++) {
 
-        spaces += " ";
+        spaces.append(" ");
 
 
       }
 
-      asterisks += "*";
+      asterisks.append("*");
 
-      steps[i] = spaces + asterisks;
+      steps[i] = spaces + asterisks.toString();
 
-      spaces = "";
+      spaces = new StringBuilder();
 
       System.out.println(steps[i]);
     }
