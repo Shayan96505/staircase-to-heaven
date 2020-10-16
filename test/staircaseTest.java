@@ -11,34 +11,35 @@ class staircaseTest {
 
       {" *"},
 
-      {   "  *\n",
-          " **\n",
+      {   "  *",
+          " **",
           "***"},
 
-      {   "    *\n",
-          "   **\n",
-          "  ***\n",
-          " ****\n",
+      {   "    *",
+          "   **",
+          "  ***",
+          " ****",
           "*****"},
 
-      {    "         *\n",
-           "        **\n",
-           "       ***\n",
-           "      ****\n",
-           "     *****\n",
-           "    ******\n",
-           "   *******\n",
-           "  ********\n",
-           " *********\n",
-           "**********\n"}
+      {   "         *",
+          "        **",
+          "       ***",
+          "      ****",
+          "     *****",
+          "    ******",
+          "   *******",
+          "  ********",
+          " *********",
+          "**********"}
 
   };
 
 
   @Test
   void makeStairs() {
+
     for (int i = 0; i < inputs.length; i++) {
-      assertArrayEquals(outputs[i], staircase.makeStairs(inputs[i]));
+      assertArrayEquals(outputs, staircase.makeStairs(inputs[i]));
     }
   }
 }
