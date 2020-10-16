@@ -1,22 +1,23 @@
 public class Tiktok {
 
-  private static int minuteHandAngle;
-  private static int hourHandAngle;
+  private static double hourHandAngle;
+  private static double hourHandDegree;
 
-  public static int getMinuteHandAngle(float minutes) {
-    int minuteHandAngle = 0;
+  public static double getMinuteHandAngle(double minutes) {
 
-    minuteHandAngle = (int) (minutes * 6);
+    double minuteHandAngle = (minutes * 6);
 
     return minuteHandAngle;
   }
 
-  public static int getHourHandAngle(int hours){
-    int hourHandAngle = 0;
-    int combo = minuteHandAngle;
-
-
-
+  public static double getHourHandAngle(int hours, double minutes){
+    if (hours >= 12) {
+      hourHandDegree = hours - 12;
+    }
+    if (hours < 12){
+      hourHandDegree = hours;
+    }
+    hourHandAngle = ((hourHandDegree * 30) + (.5 * minutes));
 
     return hourHandAngle;
   }
