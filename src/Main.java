@@ -2,7 +2,7 @@ public class Main {
 
   public static void main(String[] args) {
 
-  staircase.makeStairs(10);
+  //staircase.makeStairs(10);
 /*
     System.out.println(Cubes.isCube(-1));
     System.out.println(Cubes.isCube(0));
