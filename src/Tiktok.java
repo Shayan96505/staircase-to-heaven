@@ -5,9 +5,7 @@ public class Tiktok {
 
   public static double getMinuteHandAngle(double minutes) {
 
-    double minuteHandAngle = (minutes * 6);
-
-    return minuteHandAngle;
+    return (minutes * 6);
   }
 
   public static double getHourHandAngle(int hours, double minutes){
